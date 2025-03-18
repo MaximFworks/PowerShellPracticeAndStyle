@@ -26,7 +26,7 @@ All that said, make sure you specify the version of PowerShell you wrote for by 
 #requires -version 3.0
 ```
 
-The `#requires` statement will prevent the script from running on the wrong version of PowerShell.
+The `#requires` statement will make sure, that version of PowerShell is at least 3.0, or the script will exit with the error "ScriptRequiresUnmatchedPSVersion". You may still encounter problems if you run PowerShell 5.1 (.NET Framework) scripts on PowerShell 7+ (.NET Core).
 
 ### PowerShell Supported Version
 
